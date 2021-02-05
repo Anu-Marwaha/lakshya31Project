@@ -17,8 +17,8 @@ class Plinko {
       translate(pos.x, pos.y);
       rotate(angle);
       rectMode(CENTER);
-      fill(255);
-      ellipse(0, 0, this.r);
+      fill("blue");
+      ellipse(0, 0, this.r,this.r);
       pop();
     }
   };

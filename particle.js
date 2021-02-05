@@ -19,8 +19,8 @@ class Particle {
     translate(pos.x, pos.y);
     rotate(angle);
     rectMode(CENTER);
-    fill(255);
-    ellipse(this.x, this.y, this.r);
+    fill("yellow");
+    ellipse(this.x, this.y, this.r,this.r);
     pop();
   }
 };
