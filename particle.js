@@ -5,11 +5,11 @@ class Particle {
         'friction':0.3,
         'density':1.0
     }
-    this.body = Bodies.circle(x, y, r, options);
+    this.body = Bodies.circle(x, y, r/2, options);
     this.x = x;
     this.y = y;
     this.r = r;
-    
+    this.color=color(random(0,255),random(0,255),random(0,255))
     World.add(world, this.body);
   }
   display(){
@@ -19,7 +19,7 @@ class Particle {
     translate(pos.x, pos.y);
     rotate(angle);
     rectMode(CENTER);
-    fill("yellow");
+    fill(this.color);
     ellipse(this.x, this.y, this.r,this.r);
     pop();
   }
